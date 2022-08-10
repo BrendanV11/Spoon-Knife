@@ -1,17 +1,37 @@
 * {
-  margin:0px;
-  padding:0px;
+  margin: 0px;
+  padding: 0px;
+  /* It is good practice to alter the box sizing property as it can at
+  times be weird when set as default */
+  box-sizing: border-box;
 }
 
 #octocat {
   display: block;
-  width:384px;
+  width: 384px;
   margin: 50px auto;
+}
+
+img {
+  height: auto;
+  width: 500px;
+}
+
+/* Using flexbox to neatly adjust layout then changing flex direction to 
+column for a vertical display */
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 48px;
 }
 
 p {
   display: block;
   width: 400px;
   margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font: 30px Monaco, "Courier New", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", monospace;
 }
